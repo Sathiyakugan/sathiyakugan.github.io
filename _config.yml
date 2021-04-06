@@ -1,0 +1,84 @@
+# Site
+name: "Sathiyakugan"
+title: "Sathiyakugan"
+description: ""
+logo: 'assets/images/logo/logo_name.png'
+logo_mask: 'assets/images/logo/logohover.png'
+favicon: 'assets/images/logo/fav.png'
+baseurl: ''
+google_analytics: 'UA-193975314-1'
+disqus: 'Sathiyakugan'
+mailchimp-list: ''
+include: ["_pages"]
+permalink: /:title/
+
+# Authors
+authors:
+  sathiyakugan:
+    name: Sathiyakugan B.
+    display_name: sathiyakugan
+    gravatar: e56154546cf4be74e393c62d1ae9f9d4
+    email: sathiyakugan.15@cse.mrt.ac.lk
+    web: https://sathiyakugan.github.io
+    twitter: https://twitter.com/sathiyakugan
+    description: "Data Scientist | Software Engineer | Google Code U Alumni | Former WSO2 Software Engineering Intern | \"Google Code U\" Alumni | Former WSO2 Software Engineering Intern."
+    github: https://github.com/sathiyakugan
+    linkedin: https://www.linkedin.com/in/sathiyakugan/
+    stackoverflow: https://stackoverflow.com/users/7115193/sathiyakugan
+
+# Plugins
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-archives
+  - jekyll-analytics
+  - jekyll-admin
+
+# Archives
+jekyll-archives:
+  enabled:
+    - categories
+  layout: archive
+  permalinks:
+    category: '/category/:name/'
+
+# Pagination 
+paginate: 3
+paginate_path: /page:num/
+
+# Other
+markdown: kramdown
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    block:
+      line_numbers: true
+
+# Adsense (change to "enabled" to activate, also your client id and ad slot. Create a new ad unit from your Adsense account to get the slot.)
+adsense: "disabled"
+adsense-data-ad-client: ""
+adsense-data-ad-slot: ""
+
+# Lazy Images ("enabled" or "disabled")
+lazyimages: "disabled"
+
+exclude: [changelog.md, LICENSE.txt, README.md, Gemfile, Gemfile.lock]
+
+jekyll_analytics:
+  GoogleAnalytics:          # Add, if you want to track with Google Analytics
+    id: UA-142050876-1      # Required - replace with your tracking id
+    anonymizeIp: false      # Optional - Default: false - set to true for anonymized tracking
+
+collections:
+  projects:
+    output: false
+    permalink: /:collection/:title/
+
+  skills:
+    output: false
+    permalink: /:collection/:title/
+

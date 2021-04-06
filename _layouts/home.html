@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- important meta tag -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- site title -->
+    <title>{{ page.title }} | {{site.name}}</title>
+    {% seo %}
+    <!-- site description and atuhor name -->
+    <meta name="description" content="Udvas is personal HTML multipurpose portfolio template">
+    <meta name="author" content="spellbit"/>
+    <!-- favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="{{ site.baseurl }}/assets/images/logo/fav.png">
+    <!-- font cdn links -->
+    <link href="https://fonts.googleapis.com/css?family=Hind:400,500" rel="stylesheet">
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets_home/css/font-awesome.min.css">
+    <!-- bootstrap css links -->
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets_home/css/bootstrap.min.css">
+    <!-- animate css link -->
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets_home/css/animate.min.css">
+    <!-- plugins css links -->
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets_home/css/lightcase.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets_home/css/swiper.min.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets_home/css/slick.css">
+    <!-- main style css link -->
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets_home/css/simple-line-icons.css" type="text/css" media="all">
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets_home/css/magnific-popup.css" type="text/css" media="all">
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets_home/css/style.css">
+    <!-- responsive css link -->
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets_home/css/responsive.css">
+
+    <!--[if lt IE 9]>
+    <script src="http://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="http://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+{% if jekyll.environment == 'production' %}
+<!-- change your GA id in _config.yml -->
+<script>
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    ga('create', '{{site.google_analytics}}', 'auto');
+    ga('send', 'pageview');
+</script>
+{% endif %}
+
+{% capture layout %}{% if page.layout %}layout-{{ page.layout }}{% endif %}{% endcapture %}
+
+<body class="{{layout}}">
+    <!-- defer loading of font and font awesome -->
+    <noscript id="deferred-styles">
+        <link href="https://fonts.googleapis.com/css?family=Righteous%7CMerriweather:300,300i,400,400i,700,700i"
+            rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+            integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    </noscript>
+
+
+    <!-- Begin Menu Navigation
+================================================== -->
+
+
+
+    <!-- header-section start -->
+    <header class="header-section">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg">
+
+                <a class="navbar-brand logo" href="index.html">
+                    <img src="{{ site.baseurl }}/assets/images/logo/logo_name.png" onmouseover="this.src='{{ site.baseurl }}/assets/images/logo/logohover.png';"
+                         onmouseout="this.src='{{ site.baseurl }}/assets/images/logo/logo_name.png';"
+                         alt="logo-img" style="height: 40px;margin-top: 15px">
+                </a>
+                <!--				<a class="navbar-brand logo" href="index.html">My Space</a>-->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="menu-toggle"></span>
+                </button>
+                <div class="collapse navbar-collapse main-menu-part" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto menu">
+                        <li><a href="{{ site.baseurl }}" class="scroll-smoth">Home</a>
+                        </li>
+                        <li><a href="/#works" class="scroll-smoth">Works</a></li>
+                        <li><a href="/#service" class="scroll-smoth">services</a></li>
+                        <li><a href="/#blog" class="scroll-smoth">blog</a></li>
+<!--                        <li class="menu_has_children"><a href="#">Pages</a>-->
+<!--                            <ul class="sub-menu">-->
+<!--                                <li><a href="{{ site.baseurl }}/blog">Blog</a></li>-->
+<!--                                <li><a href="{{ site.baseurl }}/contact">Contact Page</a></li>-->
+<!--                            </ul>-->
+<!--                        </li>-->
+<!--                        <li><a href="#">Contact</a></li>-->
+                    </ul>
+                    <ul class="social-links ml-auto">
+                        <li><a id="user-linkedin" href="{{ site.authors['sathiyakugan'].linkedin }}"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                        <li><a id="user-github" href="{{ site.authors['sathiyakugan'].github }}"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+                        <li><a id="user-stack-overflow" href="{{ site.authors['sathiyakugan'].stackoverflow }}"><i class="fa fa-stack-overflow" aria-hidden="true"></i></a>
+                        </li>
+                        <li><a id="user-twitter" href="{{ site.authors['sathiyakugan'].twitter }}"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- End Navigation
+================================================== -->
+    {{ content }}
+
+        <!-- Begin Footer
+================================================== -->
+    <section class="footer-section">
+
+        <div class="footer-bottom">
+            <div class="container">
+                <ul class="social-links">
+                    <li><a href="{{ site.authors['sathiyakugan'].linkedin }}"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                    <li><a href="{{ site.authors['sathiyakugan'].github }}"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+                    <li><a href="{{ site.authors['sathiyakugan'].stackoverflow }}"><i class="fa fa-stack-overflow" aria-hidden="true"></i></a></li>
+                    <li><a href="{{ site.authors['sathiyakugan'].twitter }}"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+
+                </ul>
+                <p class="copy-right">Copyright 2020 <a href="index.html">Sathiyakugan</a> All Rights Resered</p>
+            </div>
+        </div>
+    </section>
+
+        <!-- End Footer
+================================================== -->
+
+    <div class="scroll-to-top">
+		<span class="scroll-icon">
+			<i class="fa fa-rocket" aria-hidden="true"></i>
+		</span>
+    </div>
+
+    <!-- Scripts
+================================================== -->
+
+    <!-- jQuery library js link -->
+    <script src="{{ site.baseurl }}/assets_home/js/jquery-3.3.1.min.js"></script>
+    <!-- bootstrap js links -->
+    <script src="{{ site.baseurl }}/assets_home/js/bootstrap.min.js"></script>
+    <script src="{{ site.baseurl }}/assets_home/js/bootstrap.bundle.min.js"></script>
+    <!-- plugins js links -->
+    <script src="{{ site.baseurl }}/assets_home/js/jquery.easing.min.js"></script>
+    <script src="{{ site.baseurl }}/assets_home/js/lightcase.js"></script>
+    <script src="{{ site.baseurl }}/assets_home/js/imagesloaded.pkgd.min.js"></script>
+    <script src="{{ site.baseurl }}/assets_home/js/jquery.magnific-popup.min.js"></script>
+    <script src="{{ site.baseurl }}/assets_home/js/infinite-scroll.min.js"></script>
+    <script src="{{ site.baseurl }}/assets_home/js/custom-js.js"></script>
+
+    <script src="{{ site.baseurl }}/assets_home/js/circle-progress.min.js"></script>
+    <script src="{{ site.baseurl }}/assets_home/js/swiper.min.js"></script>
+    <script src="{{ site.baseurl }}/assets_home/js/slick.min.js"></script>
+    <script src="{{ site.baseurl }}/assets_home/js/isotope.pkgd.min.js"></script>
+    <!-- main js link -->
+    <script src="{{ site.baseurl }}/assets_home/js/main.js"></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-analytics.js"></script>
+    <script src="{{ site.baseurl }}/assets_home/js/custom-index.js"></script>
+
+
+</body>
+
+
+</html>

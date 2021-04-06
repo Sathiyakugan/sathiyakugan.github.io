@@ -1,0 +1,26 @@
+<!-- begin post -->
+
+<!-- portfolio item -->
+<div class="col-md-4 col-sm-6 grid-item {{ project.categories[0] }}">
+    <div class="pop-box-model">
+        <a href="#small-dialog" class="work-content">
+            <div class="portfolio-item rounded shadow-dark">
+                <div class="details">
+                    <span class="term">{{ project.categories[0] }}</span>
+                    <h4 class="title">{{ project.title }}</h4>
+                    <span class="more-button"><i class="icon-options"></i></span>
+                </div>
+                <div class="thumb">
+                    <img style="height: 233.328px;" src="{% if post.image contains "://" %}{{ project.image }}{% else %}{{ site.baseurl }}/{{ project.image }}{% endif %}" alt="{{ project.title }}">
+                    <div class="mask"></div>
+                </div>
+            </div>
+        </a>
+        <div id="small-dialog" class="white-popup zoom-anim-dialog mfp-hide">
+            <img src="{% if post.image contains "://" %}{{ project.image }}{% else %}{{ site.baseurl }}/{{ project.image }}{% endif %}" alt="{{ project.title }}">
+            <h2>{{ project.title }}</h2>
+            <p>{{ project.content | markdownify }}</p>
+            <a style="background: "  href="{{ project.github_url }}" class="btn btn-outline-dark btn-sm">View on Github</a>
+        </div>
+    </div>
+</div>
