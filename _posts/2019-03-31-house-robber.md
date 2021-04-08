@@ -5,7 +5,7 @@ date: '2019-03-31 06:33:23 +0700'
 author: sathiyakugan
 layout: post
 guid: null
-permalink: "/house-robber/"
+permalink: "/blog/house-robber/"
 wp_last_modified_info:
 - June 14, 2019 @ 8:17 pm
 wplmi_shortcode:
@@ -22,6 +22,7 @@ image: assets/images/posts/leetcode/house-robber/houserobber.jpg
 tags:
 - Programming
 - ds-and-algo
+- dynamic-programming
 ---
 
 **You are a professional robber planning to rob houses along a street.** Each house has a certain amount of money stashed, the only constraint stopping you from robbing each of them is that adjacent houses have security system connected and it will automatically contact the police if two adjacent houses were broken into on the same night.
@@ -59,3 +60,18 @@ Suppose we know the solution for first n houses, now to find the solution for `n
 		If we do not want to rob `n` th house we can just use the solution for `n-1` th house. 
 
 ![]({{ site.baseurl }}/assets/images/posts/leetcode/house-robber/eg.png)
+
+
+~~~~python 
+from collections import defaultdict
+
+
+class Solution:
+    def rob(self, nums) -> int:
+        dp = defaultdict(int)
+        # -1 -> 0
+        # -2 -> 0
+        for i in range(len(nums)):
+            dp[i] = max(nums[i] + dp[i - 2], dp[i - 1])
+        return dp[len(nums)-1]
+~~~~
