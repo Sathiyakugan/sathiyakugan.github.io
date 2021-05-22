@@ -4,8 +4,8 @@ id: 29
 date: '2019-03-30 19:21:42 +0700'
 author: sathiyakugan
 layout: post
-guid: http://www.sinaungoding.com/wordpress/?p=29
-permalink: "/akses-raspbearryaaa-pi-gui-via-terminal-mac-os/"
+guid: 
+permalink: "/ChildBicycleTrackingSystem/"
 wp_last_modified_info:
 - June 14, 2019 @ 8:26 pm
 wplmi_shortcode:

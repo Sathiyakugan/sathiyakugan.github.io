@@ -4,8 +4,8 @@ title: About
 date: 2019-04-16T04:10:18+07:00
 author: odeng
 layout: home
-guid: http://www.sinaungoding.com/wordpress/?page_id=126
-permalink: /about
+guid: x
+permalink: /contact
 wp_last_modified_info:
   - June 20, 2019 @ 6:50 am
 wplmi_shortcode:
@@ -19,53 +19,18 @@ theme-transparent-header-meta:
 ---
 
 
-<section class="single-page-banner contact-page-banner">
-    <div class="banner-content-area">
-        <div class="container">
-            <div class="align-content-lg-start">
-                <h4>Contact</h4>
-                <nav aria-label="breadcrumb" class="page-header-breadcrumb">
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item active" aria-current="page">Contact</li>
-                        <p class="a">
-                        a di dunia industri dan pengalaman baru. Demikian profil singkat saya, semoga bermanfaat. 🙂
-                        </p>
-                    </ol>
-                </nav>
-            </div>
-        </div>
+<!-- about-section start -->
+<section id="about" class="about-section section-padding" style="text-align: left">
+    <div class="container">
+        <div class="about-skill-part">
+            <h4>About me</h4>
+            <hr>
+            <h5>I'm Sathiyakugan</h5>
+            <p>{{site.detail_description}}</p>
+        </div>		
     </div>
 </section>
-<section class="featured-section section-padding">
-    <div class="container">
-        <div class="featured-part">
-            <div class="row">
-                <div class="col-lg-4">
-                    <div class="featured-item hover-item">
-                        <i class="fa fa-headphones" aria-hidden="true"></i>
-                        <h4>Awesome Support</h4>
-                        <p>Lorem ipsum dolor sit amet,sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam sanctus </p>
-                    </div>
-                </div><!-- featured-item end -->
-                <div class="col-lg-4">
-                    <div class="featured-item hover-item">
-                        <i class="fa fa-comments" aria-hidden="true"></i>
-                        <h4>Financial Advise</h4>
-                        <p>Lorem ipsum dolor sit amet,sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam sanctus </p>
-                    </div>
-                </div><!-- featured-item end -->
-                <div class="col-lg-4">
-                    <div class="featured-item hover-item">
-                        <i class="fa fa-thumbs-up" aria-hidden="true"></i>
-                        <h4>Awesome Support</h4>
-                        <p>Lorem ipsum dolor sit amet,sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam sanctus </p>
-                    </div>
-                </div><!-- featured-item end -->
-            </div>
-        </div>
-    </div>
-</section>	
-
+<!-- about-section end -->
 
 <section class="experience-section section-padding">
     <div class="contact-shape-img"><img src="assets_home/images/shape/contact-sec-img.png" alt="contact-sec-img"></div>
@@ -74,7 +39,7 @@ theme-transparent-header-meta:
             <div class="col-xl-7 offset-xl-4" >
                 <div id="contact-me-alert_placeholder"></div>
                 <div class="section-header">
-                    <h2>Contact Us</h2>
+                    <h2>Contact Me</h2>
                     <p>Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,  sed diam voluptua.  no sea takimata sanctus est Lorem ipsum.</p>
                 </div>
                 <div class="section-wrapper">
