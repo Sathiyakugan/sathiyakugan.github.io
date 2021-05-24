@@ -18,7 +18,7 @@ theme-transparent-header-meta:
 - default
 categories:
 - leetcode
-image: assets/images/posts/leetcode/maximum-subarray/max-sub.jpg
+image: assets/images/posts/leetcode/decode-string/decodestring.jpeg
 tags:
 - Programming
 - ds-and-algo
