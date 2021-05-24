@@ -1,29 +1,5 @@
 ---
 title: Decode String
-id: 2
-date: '2021-05-22 05:03:23'
-author: sathiyakugan
-layout: post
-guid: null
-permalink: "/blog/decode-string/"
-wp_last_modified_info:
-- June 14, 2019 @ 8:17 pm
-wplmi_shortcode:
-- "[lmt-post-modified-info]"
-site-sidebar-layout:
-- default
-site-content-layout:
-- default
-theme-transparent-header-meta:
-- default
-categories:
-- leetcode
-image: assets/images/posts/leetcode/decode-string/decodestring.jpeg
-tags:
-- Programming
-- ds-and-algo
-- dfs
-- strings
 ---
 
 Given an encoded string, return its decoded string.
@@ -68,6 +44,8 @@ Output: "abccdcdcdxyz"
 Important thing to notice is 
 - contiguous subarray - which means array should not break. Take Example 3  `[5, 4, 7]` is not subarray.  since `-1` is missed.
 
+- - -
+
 
 **Constraints:**
 
@@ -76,44 +54,48 @@ Important thing to notice is
 * `s` is guaranteed to be a valid input.
 * All the integers in `s` are in the range` [1, 300]`.
 
-- - -
 
-<ins>**Solution**</ins>
+![]({{ site.baseurl }}/assets/images/posts/leetcode/maximum-subarray/dyn-table.png)
 
 
-* We know that if the `s` is a string without any digit or square brackets then it's obviously . the same string 
+<ins>** solution**</ins>
+
+1. We know that,  if the `s` is a string without any digit or square brackets then it's obviously . the same string 
 
 	if `s = 'aaa' ` then  answer is  `'aaa'`
 
-*  If the string   `s = 2[b]` then think what we do?
+2.  If the string   `s = 2[b]` then think what we do?
 	we will first take the number `2` then when you see the `[` you know that you need to multiply that string inside.
 	
-* 	If the string is simpler like in the example then it's easy.
+	if the string is simpler like  `2[b]` then it's easy.
 	
-* 	Say if the string is bit complex
+3.	say if the string is bit complex
 	
 	`s = 2[3[b]]`
 	
 	`3[b]` this part is repeated again ?... Hmm what can we do ?
 	
-* 	It's seems like onion pealing right ?
+	it seems like onion pealing doesn't it ?
+	- When you peel the onion you see another small onion  
+		- `3[b]` 
+	- or some part that is not peelable
+		- `b`
+4. so  we can solve it using recursion .
 	
-	So can we solve it using recursion ? Well yes. 
+5. Let's think this problem as  a graph visit.  Say Depth First Search. 
 	
-	Let's think of a graph visit.  
+	- You will visit a node. Then you expand the child. until you find no children. 
 	
-	Say Depth First Search. 
+	- Basically expanding and see what is inside.
 	
-	- You will visit a node. Then you expand the child. until you find no childs. 
-	
-	-  Expanding and see what is inside.
-	
-	- Here in this problem what we need to expand  is `[]` 
+	- Here in this problem expanding entity  is `[]` 
 	
 	- So After expanding we need to get the inside the result inorder to multiply by the number outside. 
 	
 
-the time complexity  of  this solution is  `O(N)` 
+the time complexity  of  this solution is  `O(max(k) * N)`
+Here N is the length of the String
+K is the maximum number we will get before `[`
 
 ~~~~python
 class Solution:
@@ -128,7 +110,6 @@ class Solution:
                 elif ch.isalpha():
                     out+=ch
                 elif ch=='[':
-		    #Expanding part
                     out=out+(decode(s))*int(num)
                     num=''
                 elif ch==']' :
