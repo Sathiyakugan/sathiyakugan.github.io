@@ -1,5 +1,29 @@
 ---
 title: Decode String
+id: 4
+date: '2021-05-22 06:33:23 +0700'
+author: sathiyakugan
+layout: post
+guid: null
+permalink: "/blog/decode-string/"
+wp_last_modified_info:
+- June 14, 2019 @ 8:17 pm
+wplmi_shortcode:
+- "[lmt-post-modified-info]"
+site-sidebar-layout:
+- default
+site-content-layout:
+- default
+theme-transparent-header-meta:
+- default
+categories:
+- leetcode
+image: assets/images/posts/leetcode/maximum-subarray/max-sub.jpg
+tags:
+- Programming
+- ds-and-algo
+- dfs
+- recursion
 ---
 
 Given an encoded string, return its decoded string.
