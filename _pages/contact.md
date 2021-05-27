@@ -40,7 +40,6 @@ theme-transparent-header-meta:
                 <div id="contact-me-alert_placeholder"></div>
                 <div class="section-header">
                     <h2>Contact Me</h2>
-                    <p>Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,  sed diam voluptua.  no sea takimata sanctus est Lorem ipsum.</p>
                 </div>
                 <div class="section-wrapper">
                     <div class="contact-form-part">

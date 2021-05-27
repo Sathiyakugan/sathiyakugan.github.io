@@ -79,9 +79,6 @@ Important thing to notice is
 * All the integers in `s` are in the range` [1, 300]`.
 
 
-![]({{ site.baseurl }}/assets/images/posts/leetcode/maximum-subarray/dyn-table.png)
-
-
 <ins>** solution**</ins>
 
 1. We know that,  if the `s` is a string without any digit or square brackets then it's obviously . the same string 
