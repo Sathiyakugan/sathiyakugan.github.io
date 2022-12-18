@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About
-description: Welcome to my website! I'm Sathiyakugan, a data science engineer from Sri Lanka with over three years of experience working at WSO2. In my current role, I work with cross-functional teams such as sales, marketing, and cloud products to acquire, analyze, and visualize datasets in order to identify patterns and insights for stakeholders.
+description: Welcome to my space! I'm Sathiyakugan, a data science engineer from Sri Lanka with over three years of experience working at WSO2. In my current role, I work with cross-functional teams such as sales, marketing, and cloud products to acquire, analyze, and visualize datasets in order to identify patterns and insights for stakeholders.
 permalink: /about/
 image: '/images/about/google.jpg'
 ---
