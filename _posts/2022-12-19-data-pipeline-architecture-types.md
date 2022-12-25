@@ -4,6 +4,7 @@ layout: post
 description: 'Data transformation is the process of preparing data for analysis or use by cleaning, filtering, and shaping it into the desired format. There are various patterns for performing data transformation, including batch processing, stream processing, and micro-batching. Cloud services like AWS, Azure, and Google Cloud offer tools and services to implement these patterns in a scalable and cost-effective way.'
 date: '2022-12-19 17:31:35'
 image: "/images/blogs/data_pipeline/data_pipeline.jpg"
+author: "Balakrishnan Sathiyakugan"
 tags:
 - architecture
 - data_pipeline
