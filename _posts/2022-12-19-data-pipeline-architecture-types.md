@@ -1,7 +1,7 @@
 ---
 title: 'Data Pipeline Architecture: a variety of ways you can build your Data Pipeline'
 layout: post
-description: 'In this tutorial, I will show you how easy'
+description: 'Data transformation is the process of preparing data for analysis or use by cleaning, filtering, and shaping it into the desired format. There are various patterns for performing data transformation, including batch processing, stream processing, and micro-batching. Cloud services like AWS, Azure, and Google Cloud offer tools and services to implement these patterns in a scalable and cost-effective way.'
 date: '2022-12-19 17:31:35'
 image: "/images/blogs/data_pipeline/data_pipeline.jpg"
 tags:
@@ -10,9 +10,11 @@ tags:
 - data_engineering
 ---
 Data pipelines are a set of processes that move data from one place to another, often involving transformation and processing of the data along the way. There are several types of data pipelines, including 
-* **batch processing**: involves the processing of large volumes of data in batch mode, typically on a scheduled basis. Batch processing is suitable for cases where data is not time-sensitive and can be processed in bulk.
-* **stream processing**: involves the continuous processing of data as it is generated or received. Stream processing is suitable for cases where data is generated continuously and needs to be processed in real-time.
-* **batch + stream processing**: combines the benefits of both batch and stream processing by processing data in both batch and stream modes.
+* **Batch processing**: Collecting and processing data in large chunks at regular intervals. It is typically used when the volume of data is high and the latency requirements are not very strict. Batch processing is suitable for scenarios where data can be processed offline, such as when it is not required in real-time.
+* **Stream processing**:  Continuously processing data as it is generated in real-time. It is typically used when the data is generated continuously and the latency requirements are strict, as the data must be processed as soon as it is generated. Stream processing is suitable for scenarios where data needs to be processed in real-time, such as when it is used to trigger an action or alert.
+* **Micro-batching (batch + stream processing)**: It is a hybrid approach that involves processing data in small batches at high frequency. It combines the benefits of batch processing (such as the ability to process large volumes of data) with the benefits of stream processing (such as low latency). Micro-batching is suitable for scenarios where the volume of data is high and the latency requirements are strict, but not as strict as in stream processing.
+
+These patterns can be implemented using a variety of tools and technologies, such as Apache Hadoop, Apache Spark, and Apache Flink. Cloud services such as AWS, Azure, and Google Cloud offer a range of tools and services that can be used to implement these patterns in a scalable and cost-effective manner.
 
 The main components of a data pipeline include the 
 1. data source (upstream)
@@ -39,12 +41,6 @@ EL is often used when the source and destination systems have similar data struc
 
 #### Cons:
 * Limited flexibility: EL does not allow for any data transformation, so it may not be suitable for scenarios where data needs to be modified or cleansed before being loaded into the destination system.
-
-#### Implementation on cloud services: 
-To implement an EL pipeline on 
-* Google Cloud:  you can use the [Cloud Data Fusion service](https://cloud.google.com/data-fusion), which allows you to extract data from a variety of sources and load it into a destination system without any transformation. You can also use the [Storage Transfer Service](https://cloud.google.com/storage-transfer-service) to migrate data between Google Cloud and other platforms.
-* Azure: you can use the [Azure Data Factory service](https://azure.microsoft.com/en-us/products/data-factory/#features) to implement an EL pipeline by creating a pipeline that extracts data from a source system and loads it into a destination system without any transformation. You can also use the [Azure Data Migration service](https://azure.microsoft.com/en-us/products/database-migration/) to migrate data between Azure and other platforms.
-* AWS: you can use the [AWS Data Pipeline service](https://aws.amazon.com/datapipeline/) to implement an EL pipeline by creating a pipeline that extracts data from a source system and loads it into a destination system without any transformation. You can also use the [AWS Database Migration Service](https://aws.amazon.com/dms/) to migrate data between AWS and other platforms.
 
 ### Extract Transform Load (ETL)
 <div class="gallery-box">
@@ -118,35 +114,4 @@ ETLT is often used when the data needs to be transformed multiple times, or when
 ETLT can be implemented using tools such as AWS Glue or Azure Data Factory, which allow data to be extracted from a variety of sources, transformed using custom logic, loaded into a destination system, and then transformed again using additional logic.
 
 In conclusion, there are several different patterns for performing data transformation, each with its own benefits and drawbacks. The appropriate pattern will depend on the specific requirements and constraints of the data transformation scenario. Cloud services such as AWS, Azure, and Google Cloud offer a range of tools and services that can be used to implement these patterns in a scalable and cost-effective manner.
-
-
-
-Cloud services such as Google Cloud, Azure, and Amazon Web Services (AWS) offer a range of tools and services that can be used to implement data transformation pipelines, including Extract Load (EL), Extract Transform Load (ETL), Extract Load Transform (ELT), and Extract Transform Load Transform (ETLT). In this article, we will explore how these pipelines can be implemented using each of these cloud platforms.
-
-
-
-
-Extract Load (EL)
-
-
-Extract Transform Load (ETL)
-
-Extract Load Transform (ELT)
-To implement an ELT pipeline on Google Cloud, you can use the BigQuery service to load data into a powerful data warehouse and then transform it using SQL or other languages supported by the destination system. You can also use the Cloud Data Fusion service to load data into BigQuery and then transform it using custom logic.
-
-On Azure, you can use the Azure Synapse service to implement an ELT pipeline by loading data into a powerful data warehouse and then transforming it using SQL or other languages supported by the destination system. You can also use the Azure Data Factory service to load data into Azure Synapse and then transform it using custom logic.
-
-On AWS, you can use the Amazon Redshift service to implement an ELT pipeline by loading data into a powerful data warehouse and then transforming it using SQL or other languages supported by the destination system. You can also use the AWS Glue service to load data into Amazon Redshift and then transform it using custom logic.
-
-Extract Transform Load Transform (ETLT)
-To implement an ETLT pipeline on Google Cloud, you can use the Cloud Data Fusion service to extract data from a variety of sources, transform it using custom logic, load it into a destination system, and then transform it again using additional logic. You can also use the Cloud Functions service to create custom logic for data transformation.
-
-On Azure, you can use the Azure Data Factory service to
-
-implement an ETLT pipeline by creating a pipeline that extracts data from a source system, transforms it using custom logic, loads it into a destination system, and then transforms it again using additional logic. You can also use the Azure Functions service to create custom logic for data transformation.
-
-On AWS, you can use the AWS Glue service to implement an ETLT pipeline by creating a job that extracts data from a source system, transforms it using custom logic, loads it into a destination system, and then transforms it again using additional logic. You can also use the AWS Lambda service to create custom logic for data transformation.
-
-In conclusion, each of the cloud platforms - Google Cloud, Azure, and AWS - offer a range of tools and services that can be used to implement data transformation pipelines, including EL, ETL, ELT, and ETLT. The appropriate platform and tools will depend on the specific requirements and constraints of the data transformation scenario, as well as the level of flexibility, performance, and scalability needed.
-
 
