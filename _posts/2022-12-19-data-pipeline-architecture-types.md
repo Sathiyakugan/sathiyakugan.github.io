@@ -116,3 +116,8 @@ ETLT can be implemented using tools such as AWS Glue or Azure Data Factory, whic
 
 In conclusion, there are several different patterns for performing data transformation, each with its own benefits and drawbacks. The appropriate pattern will depend on the specific requirements and constraints of the data transformation scenario. Cloud services such as AWS, Azure, and Google Cloud offer a range of tools and services that can be used to implement these patterns in a scalable and cost-effective manner.
 
+### References 
+* [Batch Processing vs. Stream Processing: Which One to Use?](https://www.datadoghq.com/blog/batch-processing-vs-stream-processing/)
+* [Stream Processing vs. Batch Processing: When to Use Which](https://blog.memsql.com/stream-processing-vs-batch-processing-when-to-use-which/)
+* [Micro-Batching: The Best of Both Worlds](https://www.confluent.io/blog/micro-batching-the-best-of-both-worlds/)
+* [Data Transformation in Apache Spark](https://spark.apache.org/docs/latest/structured-streaming-programming-guide.html#data-transformation)
