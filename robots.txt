@@ -2,4 +2,4 @@
 layout: none
 ---
 User-agent: *
-sitemap: {{ site.url }}/sitemap.xml
+sitemap: https://sathiyakugan.dev/sitemap.xml
