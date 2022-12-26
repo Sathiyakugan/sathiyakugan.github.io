@@ -6,7 +6,7 @@ date: 2022-11-18 18:05:55 +0300
 image: '/images/blogs/python_packages/facade.jpg'
 tags: [python, designpattern, facade]
 ---
-In the previous blog post, I discussed ,how modules and packages are used in python and how it allows for the implementation of design patterns to improve the structure and efficiency of your application specially for the Singleton pattern. In this article
+In the [previous blog](/blog/modules-packages-help-implement-design-pattern) post, I discussed ,how modules and packages are used in python and how it allows for the implementation of design patterns to improve the structure and efficiency of your application specially for the Singleton pattern. In this article
 I will cover how to implement Facade pattern using python moduels and packages.
 
 ## Facade pattern

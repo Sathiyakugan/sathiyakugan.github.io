@@ -6,7 +6,7 @@ date: 2022-10-13 15:01:35 +0300
 image: '/images/blogs/clean_code/documentation.jpg'
 tags: [python, logging, testing]
 ---
-In the previous blog post, I discussed strategies for elevating your Python skills, including,
+In the [previous blog](/blog/best-practices-logging-testing) post, I discussed strategies for elevating your Python skills, including,
 * Logging and Instrumentation
 * Testing
 

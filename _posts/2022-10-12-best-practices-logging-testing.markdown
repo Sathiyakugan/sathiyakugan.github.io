@@ -116,4 +116,4 @@ Here are a few tips for writing good log messages:
 
 It is important to use logging appropriately in your code. Overuse of logging can result in a large volume of messages, which can make it difficult to find important information. On the other hand, underuse of logging can make it difficult to understand what is happening in your code.
 
-In this article we coverd how testing helps ensure that the code is correct and functions as intended, while logging provides useful information for debugging and understanding the code's behavior. In the next article, we will cover best practices for documentation, version control, and code review.
+In this article we coverd how testing helps ensure that the code is correct and functions as intended, while logging provides useful information for debugging and understanding the code's behavior. In the [next article](/blog/best-prectices-python-documentation-version-control), we will cover best practices for documentation, version control, and code review.
