@@ -1,6 +1,6 @@
 ---
 title: Prediction of diabetic foot ulceration
-description: The browser extension that makes reading Chinese online easier. Resize text on demand.
+description: The Android app uses Bluetooth-communicable smart insoles and an LSTM-based prediction model to help diabetic patients prevent injuries from turning into ulcers, with a recall rate of 90% and a precision rate of 89%.
 category: Machine Learning
 date: 2018-06-01 08:01:35 +0300
 role: Data Scientist, Android Developer, IOT developer
