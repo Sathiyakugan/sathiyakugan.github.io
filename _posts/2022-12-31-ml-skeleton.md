@@ -2,7 +2,7 @@
 title: 'Say Goodbye to Disorganized ML Projects with mlskeleton'
 layout: post
 description: 'Learn how mlskeleton, the open-source python package, can help you create a professional and organized folder structure for your machine learning projects and streamline your workflow.'
-date: '2022-12-31 17:31:35'
+date: '2022-12-31 17:31:36'
 image: "/images/blogs/ml_skeleton/ml_skeleton.jpg"
 image_caption: 'Photo by <a href="https://unsplash.com/@joelfilip?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Joel Filipe</a> on <a href="https://unsplash.com/photos/jU9VAZDGMzs?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>'
 author: "Balakrishnan Sathiyakugan"
