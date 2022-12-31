@@ -40,6 +40,3 @@ We welcome contributions to the [**mlskeleton**](https://github.com/Sathiyakugan
 We hope that `mlskeleton` will be a useful tool for you in organizing your machine learning and deep learning projects. With a consistent and organized folder structure, you can focus on the important work of building and evaluating models, rather than spending time on file management.
 
 Thank you for choosing **`mlskeleton`**!
-
-
-
