@@ -33,3 +33,5 @@ With our WanderLust Community,
 * Web Development
 * Version Control
 * Machine Learning
+
+[**Github Repo**](https://github.com/codeu-team50/codeu)

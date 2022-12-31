@@ -26,7 +26,7 @@ Overall, the proposed methodology provides a framework for using machine learnin
 * Data Visualization
 * Data Story Telling
 
-[Github Repo](https://github.com/Sathiyakugan/dengAI)
+[**Github Repo**](https://github.com/Sathiyakugan/dengAI)
 
 [//]: # (> Bike!Bike! is an international, annual gathering organized by and for community bicycle projects. The conference is a space for participants from shops and related advocacy groups to converge in a different city each year over a 4 day period to have workshops and strengthen our social network.)
 

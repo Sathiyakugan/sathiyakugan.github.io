@@ -24,4 +24,4 @@ To enable authentication for the sample application, we are using Asgardeo as th
 * Web Development
 * Python Programming
 
-[Github Repo](https://github.com/asgardeo/asgardeo-auth-python-sdk)
+[**Github Repo**](https://github.com/asgardeo/asgardeo-auth-python-sdk)

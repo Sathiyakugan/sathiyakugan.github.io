@@ -24,7 +24,7 @@ Developed the Fundamentals of dbt including modeling, sources, testing, document
 - Analytics
 - Data Engineering
 
-[Github Repo](https://github.com/Sathiyakugan/dbt_fundamentals.git)
+[**Github Repo**](https://github.com/Sathiyakugan/dbt_fundamentals.git)
 
 <div class="gallery-box">
   <div class="gallery">

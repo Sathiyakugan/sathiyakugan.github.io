@@ -15,7 +15,7 @@ To improve the efficiency of data retrieval for frontend display, an engineering
 
 To secure the data architecture, a conceptual plan was designed to illustrate the steps and strategies involved. This plan may include measures such as encryption, access controls, and regular security audits.
 
-[Tableau Public URL](https://public.tableau.com/views/CustomerandBookingAnalysis/CustomerBookingAnalysisDashboard?:language=en-US&:display_count=n&:origin=viz_share_link)
+[**Tableau Public URL**](https://public.tableau.com/views/CustomerandBookingAnalysis/CustomerBookingAnalysisDashboard?:language=en-US&:display_count=n&:origin=viz_share_link)
 
 ### Tools Used:
 * Tableau
