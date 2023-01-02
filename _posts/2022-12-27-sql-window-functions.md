@@ -7,7 +7,7 @@ image: "/images/blogs/sql/window_functions.jpg"
 image_caption: 'Photo by <a href="https://unsplash.com/@rotekirsche20?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">rotekirsche20</a> on <a href="https://unsplash.com/wallpapers/desktop/windows?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>'
 author: "Balakrishnan Sathiyakugan"
 tags:
-- sql
+- SQL
 - window_functions
 - data_analytics
 ---
