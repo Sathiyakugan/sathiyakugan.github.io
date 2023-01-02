@@ -7,7 +7,7 @@ image: "/images/blogs/sql/sql_performance_optimization.jpg"
 image_caption: 'Photo by <a href="https://unsplash.com/@ivvndiaz?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Ivan Diaz</a> on <a href="https://unsplash.com/photos/YOy-ek-aBR0?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>'
 author: "Balakrishnan Sathiyakugan"
 tags:
-- SQL
+- sql
 - data_engineering
 - data_analysis
 - data_science
