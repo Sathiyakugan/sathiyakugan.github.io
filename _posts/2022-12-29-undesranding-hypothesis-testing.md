@@ -7,8 +7,8 @@ image: "/images/blogs/hypothesis_testing/hypothesis_testing_intro.jpg"
 image_caption: 'Photo by <a href="https://unsplash.com/@kellysikkema?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Kelly Sikkema</a> on <a href="https://unsplash.com/photos/hjDib8hePtw?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>'
 author: "Balakrishnan Sathiyakugan"
 tags:
-- sql
-- window_functions
+- statistics
+- data_science
 - data_analytics
 ---
 Hypothesis testing is a statistical method that allows us to test our ideas or assumptions about a population. It is commonly used in research and data analysis to evaluate whether a sample supports our assumptions about the population.
