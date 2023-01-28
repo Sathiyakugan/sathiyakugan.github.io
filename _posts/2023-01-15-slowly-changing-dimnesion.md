@@ -23,7 +23,6 @@ For an example, The ecommerce store may have a customer dimension that contains 
 
 There are several types of SCD, each with its own advantages and disadvantages. Some common types include:
 
-
 ## Type 0: 
 > No history is kept. The most recent data overwrites any previous data.
 
@@ -300,5 +299,5 @@ In summary, SCD is a crucial technique in data warehousing that allows for the t
 1. [Understanding Slowly Changing Dimensions](https://docs.oracle.com/cd/E41507_01/epm91pbr3/eng/epm/phcw/concept_UnderstandingSlowlyChangingDimensions-405719.html)
 2. [Implementing Slowly Changing Dimensions (SCDs) in Data Warehouses](https://www.sqlshack.com/implementing-slowly-changing-dimensions-scds-in-data-warehouses/)
 3. [Slowly Changing Dimension Transformation](https://learn.microsoft.com/en-us/sql/integration-services/data-flow/transformations/slowly-changing-dimension-transformation?view=sql-server-ver16)
-4. [ntroduction to Slowly Changing Dimensions (SCD) Types](https://adatis.co.uk/introduction-to-slowly-changing-dimensions-scd-types/)
+4. [Introduction to Slowly Changing Dimensions (SCD) Types](https://adatis.co.uk/introduction-to-slowly-changing-dimensions-scd-types/)
 4. [6 Different Types of Slowly Changing Dimensions and How to Apply Them?](https://medium.com/geekculture/6-different-types-of-slowly-changing-dimensions-and-how-to-apply-them-b152ef908d4e)
