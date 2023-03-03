@@ -2,7 +2,7 @@
 title: "Effective Lead Scoring with Machine Learning"
 layout: post
 description: "This blog explores lead scoring and its importance in identifying high-quality leads. It discusses features used for scoring, such as behaviors, demographics, and machine learning algorithms, to automate and prioritize leads for better sales performance."
-date: '2023-03-02 17:31:36'
+date: '2023-03-01 17:31:36'
 image: "/images/blogs/lead_scoring/lead_scoring.jpg"
 image_caption: 'Photo by <a href="https://unsplash.com/@enginakyurt?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">engin akyurt</a> on <a href="https://unsplash.com/photos/YxiW_hx3lyA?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>'
 author: "Balakrishnan Sathiyakugan"
@@ -39,22 +39,14 @@ Machine learning algorithms can analyze these actions and identify patterns that
 
 ## Features for Lead Scoring:
 To score leads effectively using machine learning, it's essential to consider various features that can be used to assess the likelihood of a lead converting into a customer. Here are some key features that can be used for lead scoring:
-1. Company-Specific Demographics
-   Company-specific demographics include factors such as industry, company size, and location. These factors help identify the companies that are most likely to become customers. For Example: Industry, company size, revenue, location, years in business, number of employees, etc.
-2. Firmographics
-   Firmographics refers to the characteristics of the company's management team, such as job titles and education levels. These factors help determine the decision-makers who are most likely to engage with your product or service. For Example: Company name, industry, company size, revenue, location, ownership type, etc.
-3. Technographics
-   Technographics refer to the technology stack used by the company, such as software and hardware. This information helps determine whether the company is a good fit for your product or service and whether you can provide the necessary technical support. For Example: Technology stack, software usage, IT budget, tech adoption rate, etc.
-4. Website Behavior
-   Website behavior includes factors such as pages visited, time spent on the site, and actions taken, such as filling out a form. This data can help identify leads who are more engaged and interested in your product or service. For Example: Pages visited, time spent on each page, clicks, downloads, search terms, etc.
-5. Social Media Behavior
-   Social media behavior includes factors such as engagement on social media platforms, posts shared, and followers. This information can help identify leads who are more likely to become customers. For Example: Social media platforms used, frequency of use, engagement level, etc.
-6. Email Engagement
-   Email engagement includes factors such as open rates, click-through rates, and responses to emails. This data can help identify leads who are more interested in your product or service. For Example:Open rates, click-through rates, conversion rates, bounce rates, unsubscribe rates, etc.
-7. Sales Interaction History
-   Sales interaction history includes factors such as previous purchases, interactions with sales representatives, and customer feedback. This information can help identify leads who are more likely to become customers. For Example:Previous purchases, sales interactions, customer service interactions, etc.
-8. External Data
-   External data refers to information collected from outside sources, such as industry reports and news articles. This information can help identify potential customers and their needs. For Example: Economic data, market trends, industry reports, news articles, public records, etc.
+1. Company-Specific Demographics: include factors such as industry, company size, and location. These factors help identify the companies that are most likely to become customers. For Example: Industry, company size, revenue, location, years in business, number of employees, etc.
+2. Filmographies: refers to the characteristics of the company's management team, such as job titles and education levels. These factors help determine the decision-makers who are most likely to engage with your product or service. For Example: Company name, industry, company size, revenue, location, ownership type, etc.
+3. Techno-graphics: refer to the technology stack used by the company, such as software and hardware. This information helps determine whether the company is a good fit for your product or service and whether you can provide the necessary technical support. For Example: Technology stack, software usage, IT budget, tech adoption rate, etc.
+4. Website Behavior: includes factors such as pages visited, time spent on the site, and actions taken, such as filling out a form. This data can help identify leads who are more engaged and interested in your product or service. For Example: Pages visited, time spent on each page, clicks, downloads, search terms, etc.
+5. Social Media Behavior: includes factors such as engagement on social media platforms, posts shared, and followers. This information can help identify leads who are more likely to become customers. For Example: Social media platforms used, frequency of use, engagement level, etc.
+6. Email Engagement: includes factors such as open rates, click-through rates, and responses to emails. This data can help identify leads who are more interested in your product or service. For Example:Open rates, click-through rates, conversion rates, bounce rates, unsubscribe rates, etc.
+7. Sales Interaction History: includes factors such as previous purchases, interactions with sales representatives, and customer feedback. This information can help identify leads who are more likely to become customers. For Example:Previous purchases, sales interactions, customer service interactions, etc.
+8. External Data: refers to information collected from outside sources, such as industry reports and news articles. This information can help identify potential customers and their needs. For Example: Economic data, market trends, industry reports, news articles, public records, etc.
 
 ### Behavioral Data
 Behavioral data refers to the actions a lead takes on your website or other digital channels. This type of data can provide insights into the level of interest a lead has in your product or service.
@@ -83,6 +75,13 @@ For example, a lead scoring model for a software company might use features such
 Another example could be a lead scoring model for a B2B marketing agency. This model might use features such as industry, company revenue, website behavior, email engagement, and social media behavior. The model might assign higher scores to leads who work in industries that the agency specializes in, work for companies with high revenue, have downloaded multiple resources from the website, have engaged with email campaigns and follow the agency on social media.
 
 Once the algorithm has been trained, it can be used to score new leads automatically. Each lead is assigned a score based on their demographic and behavioral data, and the leads can then be prioritized based on their score. This allows your sales team to focus their efforts on the leads that are most likely to convert.
+
+However, building your own lead scoring model requires extensive feature engineering and data collection, followed by training the model. Ultimately, using AI and ML for lead scoring can lead to better sales performance and revenue growth.
+
+There are several popular tools available in the market that use AI and ML for lead scoring.
+1. [Salesforce Einstein](https://www.salesforce.com/ap/products/einstein/features/): It is an AI-powered platform that uses machine learning to score leads based on various factors, including demographics, engagement history, and online behavior.
+2. [Marketo](https://business.adobe.com/products/marketo/adobe-marketo.html): It is a marketing automation platform that uses AI and predictive analytics to score leads based on factors such as behavior, demographic data, and firmographics.
+3. [HubSpot](https://www.hubspot.com/artificial-intelligence): It is a sales and marketing platform that offers an AI-powered lead scoring tool that allows users to set up custom lead scoring models based on various criteria, including website behavior, social media activity, and demographic data.
 
 ## Conclusion
 Lead scoring is crucial for any B2B organization looking to optimize sales and marketing efforts. By using both demographic and behavioral data, you can identify which leads are most likely to convert and prioritize your efforts accordingly. Machine learning can help automate this process, making it more efficient and effective. By using machine learning for lead scoring, you can ensure that your sales team is focusing their efforts on the leads that are most likely to become customers.
