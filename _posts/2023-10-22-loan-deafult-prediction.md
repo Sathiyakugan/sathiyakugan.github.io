@@ -61,14 +61,14 @@ Analyzing categorical variables, like employment type and education, unveiled so
 
 These EDA insights were invaluable! They didn't just inform my preprocessing strategies but also gave me an intuitive understanding of potential pitfalls and avenues to explore.
 
-## Crafting the Data Pipeline 
+### **Crafting the Data Pipeline**
 
 Post-EDA, I ventured into preprocessing the data. This involved:
 
-**Feature Selection:** Based on the insights from EDA, I shortlisted the most relevant features.
-**Data Cleaning:** This step was all about ensuring data integrity. I removed duplicates and dealt with missing values.
-**Data Transformation & Scaling:** I normalized certain features and used one-hot encoding for categorical variables.
-**Handling Class Imbalance:** With the help of SMOTE, I addressed the imbalance in the dataset. This ensured that my model would be trained on a more balanced representation of defaults and non-defaults.
+- **Feature Selection**: Based on the insights from EDA, I shortlisted the most relevant features.
+- **Data Cleaning**: This step was all about ensuring data integrity. I removed duplicates and dealt with missing values.
+- **Data Transformation & Scaling**: I normalized certain features and used one-hot encoding for categorical variables.
+- **Handling Class Imbalance**: With the help of SMOTE, I addressed the imbalance in the dataset. This ensured that my model would be trained on a more balanced representation of defaults and non-defaults.
 
 ## Models, Models Everywhere!
 After prepping the data, the real fun began – modeling! I experimented with a slew of models, including logistic regression, random forests, XGBoost, CatBoost, KNN, and Gaussian Naive Bayes. I utilized a comprehensive search space for hyperparameters, tweaking and tuning to extract the maximum performance.
