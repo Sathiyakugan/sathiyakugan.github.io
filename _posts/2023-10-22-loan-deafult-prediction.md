@@ -37,7 +37,7 @@ One of the first things I noticed was how the distribution of certain features v
 
 <div class="gallery-box">
   <div class="gallery">
-    <img src="/images/works/loan_default_prediction/distribution.png" loading="lazy" alt="What is NLP">
+    <img src="/images/works/loan_default_prediction/distribution_quantitative_variables.png" loading="lazy" alt="What is NLP">
   </div>
 </div>
 
