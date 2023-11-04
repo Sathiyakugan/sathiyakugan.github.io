@@ -11,6 +11,8 @@ tags:
 - nlp
 - Neural_networks
 ---
+If you're curious about the intricacies of Natural Language Processing (NLP), how we encode text for NLP tasks, Don't miss out on enriching your understanding of NLP — [follow this link to catch up on the conversation](/blog/nlp-and-word-embedding).
+
 ## What is the task of language modeling?
 
 The task of language modeling involves predicting the next word (`nth word`) in a sentence, given the preceding words (`0` to `n-1`). This prediction task allows us to capture patterns and structures within the text.
@@ -56,7 +58,7 @@ Consider the sentence: "The cat chased the ____."
 
 <div class="gallery-box">
   <div class="gallery">
-    <img src="/images/blogs/nlp/word_to_vec_model.png" loading="lazy" alt="What is NLP">
+    <img src="/images/blogs/nlp/word_to_vec_model.png" loading="lazy" alt="Word to Vec Examples">
   </div>
 </div>
 
