@@ -16,7 +16,24 @@ permalink: /tags/
 
       <div class="container">
         <div class="tag__info">
-          <h1 class="tag__name">{{ this_word }} <span class="tag__counter">{{ site.tags[this_word].size }}</span></h1>
+          {% comment %}Check if the tag ends with an underscore{% endcomment %}
+          {% assign last_char = this_word | slice: -1 %}
+          {% assign display_tag = '' %}
+
+          {% if last_char == '_' %}
+          {% comment %}If it does, remove the underscore and capitalize all letters{% endcomment %}
+          {% assign display_tag = this_word | remove: '_' | upcase %}
+          {% else %}
+          {% comment %}If it doesn't, replace underscores with spaces and capitalize each word{% endcomment %}
+          {% assign tag_parts = this_word | split: '_' %}
+          {% for part in tag_parts %}
+          {% assign display_tag = display_tag | append: part | capitalize | append: ' ' %}
+          {% endfor %}
+          {% assign display_tag = display_tag | strip %}
+          {% endif %}
+
+
+          <h1 class="tag__name">{{ display_tag }} <span class="tag__counter">{{ site.tags[this_word].size }}</span></h1>
           <div class="tag__link">Check out the <a href="{{ '/blog' | relative_url }}">latest posts</a></div>
         </div>
       </div>

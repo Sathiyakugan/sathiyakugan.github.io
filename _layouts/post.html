@@ -10,7 +10,24 @@ layout: default
       {% if page.tags.size >= 1 %}
         <div class="post-tags">
           {% for tag in page.tags %}
-            <a href="{{ site.baseurl }}/tags/?tag={{ tag | downcase | url_encode }}" class="post-tag">{{ tag }}</a>
+
+          {% comment %}Check if the tag ends with an underscore{% endcomment %}
+          {% assign last_char = tag | slice: -1 %}
+          {% assign display_tag = '' %}
+
+          {% if last_char == '_' %}
+          {% comment %}If it does, remove the underscore and capitalize all letters{% endcomment %}
+          {% assign display_tag = tag | remove: '_' | upcase %}
+          {% else %}
+          {% comment %}If it doesn't, replace underscores with spaces and capitalize each word{% endcomment %}
+          {% assign tag_parts = tag | split: '_' %}
+          {% for part in tag_parts %}
+          {% assign display_tag = display_tag | append: part | capitalize | append: ' ' %}
+          {% endfor %}
+          {% assign display_tag = display_tag | strip %}
+          {% endif %}
+
+          <a href="{{ site.baseurl }}/tags/?tag={{ tag | downcase | url_encode }}" class="post-tag">{{ display_tag }}</a>
           {% endfor %}
         </div>
       {% endif %}

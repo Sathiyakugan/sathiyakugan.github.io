@@ -7,9 +7,9 @@ image: "/images/blogs/nlp/transformer.png"
 image_caption: 'Photo by DALL.E-2 Visual metaphor for the impact of Transformer models on the world.'
 author: "Balakrishnan Sathiyakugan"
 tags:
-- Deep_learning
-- nlp
-- Neural_networks
+- deep_learning
+- nlp_
+- neural_networks
 ---
 
 Welcome back to my series on understanding the intricacies of Natural Language Processing (NLP) and its applications in data science and large language models. If you've been following along, you'll recall that in [our first blog post in this series](/blog/nlp-and-word-embedding), we dove into the world of NLP and explored the concept of embeddings. In the [second blog of this series](/blog/language-modeling), we expanded our discussion to language modeling, touching on techniques like Word2Vec and Recurrent Neural Networks (RNNs). 

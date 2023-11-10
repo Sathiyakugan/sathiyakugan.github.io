@@ -5,14 +5,20 @@ description: Unlock the power of data science, data engineering, and analytics w
 ---
 
 <div class="container">
-  <div class="page-section-head">
-    <h1 class="page-title">{% if page.title %}{{ page.title }}{% else %}{{ site.data.settings.blog__settings.blog__title }}{% endif %}</h1>
-    {% if page.description %}
+    <div class="page-section-head">
+      <h1 class="page-title">{% if page.title %}{{ page.title }}{% else %}{{ site.data.settings.blog__settings.blog__title }}{% endif %}</h1>
+      {% if page.description %}
       <p class="page-description">{{ page.description }}</p>
-    {% else site.data.settings.blog__settings.blog__description %}
+      {% else site.data.settings.blog__settings.blog__description %}
       <p class="page-description">{{ site.data.settings.blog__settings.blog__description }}</p>
-    {% endif %}
-  </div>
+      {% endif %}
+      <div class="post-tags">
+        <a href="{{ site.baseurl }}/tags/?tag=data_science" class="post-tag">Data Science</a>
+        <a href="{{ site.baseurl }}/tags/?tag=data_science" class="post-tag">Data Engineering</a>
+        <a href="{{ site.baseurl }}/tags/?tag=deep_learning" class="post-tag">Deep Learning</a>
+        <a href="{{ site.baseurl }}/tags/?tag=nlp_" class="post-tag">NLP</a>
+      </div>
+    </div>
 </div>
 
 <div class="container">

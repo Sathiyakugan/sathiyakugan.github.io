@@ -7,9 +7,9 @@ image: "/images/blogs/nlp/language_modeling.jpg"
 image_caption: 'Photo by <a href="https://unsplash.com/fr/@deepmind?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Google DeepMind</a> on <a href="https://unsplash.com/photos/X5CSjHTjlgw?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>'
 author: "Balakrishnan Sathiyakugan"
 tags:
-- Deep_learning
-- nlp
-- Neural_networks
+- deep_learning
+- nlp_
+- neural_networks
 ---
 If you're curious about the intricacies of Natural Language Processing (NLP), how we encode text for NLP tasks, Don't miss out on enriching your understanding of NLP — [follow this link to catch up on the conversation](/blog/nlp-and-word-embedding).
 

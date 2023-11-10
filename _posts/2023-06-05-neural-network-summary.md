@@ -7,9 +7,9 @@ image: "/images/blogs/neural_networks/neural_networks.jpg"
 image_caption: 'Photo by <a href="https://unsplash.com/@jjying?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">JJ Ying</a> on <a href="https://unsplash.com/photos/8bghKxNU1j0?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>'
 author: "Balakrishnan Sathiyakugan"
 tags:
-- Deep_learning
-- Data_science
-- Neural_networks
+- deep_learning
+- data_science
+- neural_networks
 ---
 ## The Single Neuron:
 A neuron in a neural network is responsible for processing inputs and producing an output. In the context of binary classification, the neuron takes a set of features as input and outputs a prediction indicating which class the input belongs to. For simplicity, let's consider a single neuron with two inputs, x₁ and x₂, and a single output, y.

@@ -7,9 +7,9 @@ image: "/images/works/loan_default_prediction/loand_deafult.jpg"
 image_caption: 'Photo by <a href="https://unsplash.com/@theyshane?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Shane</a> on <a href="https://unsplash.com/photos/man-in-black-framed-sunglasses-holding-fan-of-white-and-gray-striped-cards-U_ekGjoIm_E?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>'
 author: "Balakrishnan Sathiyakugan"
 tags:
-- Machine_learning
-- Data_Science
-- EDA
+- machine_learning
+- data_science
+- eda_
 ---
 Hello to all data enthusiasts out there!
 

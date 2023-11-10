@@ -4,7 +4,7 @@ title: "Isolate, Organize, and Deploy: The Benefits of Virtual Environments and 
 description: A virtual environment is a tool used to isolate specific Python environments on a single machine, allowing you to work on multiple projects with different libraries and dependencies. This is especially useful when working on projects that have conflicting requirements or when you want to test your code in different environments.
 date: 2022-10-12 15:01:35 +0300
 image: '/images/blogs/python_virtual_env/virtual_env.jpg'
-tags: [virtualenvironments, docker, python]
+tags: [virtual_environments, docker, python]
 ---
 
 Think of a scenario that you have developed an e-commerce application using Flask version A. Year later, you want to develop another Python application using Flask, but this time you need to use version B, which has some new features that are not available in version A. However, when you try to upgrade to version B, you find that some features that were supported in version A are no longer supported in version B. This can be a frustrating situation, especially if you are using the system Python, which is common to all packages. In this case, you may find yourself in a deadlock, unable to use either version A or version B without encountering errors.

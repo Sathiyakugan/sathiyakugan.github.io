@@ -16,17 +16,33 @@ $assetsPath : "/assets/images";
   @media (max-width: $mobile) {
     .header__inner {
       padding: 32px $base-spacing-unit;
+
     }
   }
 }
 
 /* Logo */
+
+/* For mobile screens */
+@media (max-width: $mobile) {
+  .logo {
+    margin-bottom: 14px; /* Increased space below the logo for mobile devices */
+  }
+}
+
 .logo__link {
   font-family: $heading-font-family;
   font-size: 32px;
   line-height: 1;
   font-weight: 800;
   transition: color .25s ease;
+  @media (max-width: $mobile) {
+    .logo__link {
+      margin-bottom: 32px; /* Add more space below the title for mobile devices */
+    }
+  }
+
+
 }
 
 .logo__image {

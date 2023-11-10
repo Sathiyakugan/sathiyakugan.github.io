@@ -7,7 +7,7 @@ image: "/images/blogs/scd/slowly_changing_dimension.png"
 image_caption: 'Photo by <a href="https://unsplash.com/de/@chrislawton?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Chris Lawton</a> on <a href="https://unsplash.com/photos/5IHz5WhosQE?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>slowly_'
 author: "Balakrishnan Sathiyakugan"
 tags:
-- scd
+- scd_
 - data_engineering
 - data_warehouse
 ---

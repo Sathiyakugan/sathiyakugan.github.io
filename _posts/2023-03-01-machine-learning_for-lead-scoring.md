@@ -7,7 +7,7 @@ image: "/images/blogs/lead_scoring/lead_scoring.jpg"
 image_caption: 'Photo by <a href="https://unsplash.com/@enginakyurt?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">engin akyurt</a> on <a href="https://unsplash.com/photos/YxiW_hx3lyA?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>'
 author: "Balakrishnan Sathiyakugan"
 tags:
-- ml
+- ml_
 - marketing
 - data_analytics
 ---

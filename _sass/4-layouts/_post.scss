@@ -7,6 +7,7 @@
 
 .page-section-head {
   display: flex;
+  flex-direction: column; /* Stack children vertically */
   justify-content: space-between;
   align-items: center;
   margin-top: 40px;
@@ -19,11 +20,20 @@
     margin-right: 32px;
     margin-bottom: 0;
   }
-
+  .post-tags {
+    display: flex;
+    align-self: center; /* Center the tags container specifically */
+    justify-content: center; /* This centers the tags horizontally */
+    width: 100%; /* This will make sure it spans the entire width of the .page-section-head */
+    margin-top: 20px; /* Adjust as needed for spacing */
+  }
   .page-description {
     max-width: 620px;
+    justify-content: center;
+    align-items: center;
     margin-bottom: 0;
     font-size: 21px;
+    text-align: center;
     color: var(--text-alt-color);
   }
 
@@ -40,6 +50,10 @@
 
     .page-description {
       font-size: inherit;
+    }
+
+    .post-tags {
+      justify-content: center;
     }
   }
 

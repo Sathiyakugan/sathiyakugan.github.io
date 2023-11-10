@@ -7,9 +7,9 @@ image: "/images/blogs/nlp/word_embedding.png"
 image_caption: 'Photo by <a href="https://unsplash.com/@tamanna_rumee?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Tamanna Rumee</a> on <a href="https://unsplash.com/photos/vaTsR-ghLog?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>'
 author: "Balakrishnan Sathiyakugan"
 tags:
-- Deep_learning
-- nlp
-- Neural_networks
+- deep_learning
+- nlp_
+- neural_networks
 ---
 ## What is Natural Language Processing (NLP)?
 
