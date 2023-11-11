@@ -2,6 +2,7 @@
 title: "Unmasking Transformers: The Power of Attention in Language Models"
 layout: post
 description: "In this engaging third post of my NLP blog series, I delve into the heart of transformers in Natural Language Processing, focusing on the attention layer—its functions, applications, and advantages. We'll unravel how this layer allows models to weigh the importance of different words in a sentence, providing a nuanced understanding of language context."
+excerpt: "In this engaging third post of my NLP blog series, I delve into the heart of transformers in Natural Language Processing, focusing on the attention layer—its functions, applications, and advantages. We'll unravel how this layer allows models to weigh the importance of different words in a sentence, providing a nuanced understanding of language context."
 date: '2023-11-03 00:00:00'
 image: "/images/blogs/nlp/transformer.png"
 image_caption: 'Photo by DALL.E-2 Visual metaphor for the impact of Transformer models on the world.'

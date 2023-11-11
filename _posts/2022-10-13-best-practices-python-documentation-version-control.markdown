@@ -2,6 +2,7 @@
 layout: post
 title: "Python Best Practices: The Role of Documentation, Version Control, and Code Review"
 description: Documentation, version control, and code review are essential best practices in software development that help ensure the quality and maintainability of code. They provide information about the code, track and manage changes to the code, and involve review by other developers. These practices help ensure that code is reliable and easy to maintain.
+excerpt: Documentation, version control, and code review are essential best practices in software development that help ensure the quality and maintainability of code. They provide information about the code, track and manage changes to the code, and involve review by other developers. These practices help ensure that code is reliable and easy to maintain.
 date: 2022-10-13 15:01:35 +0300
 image: '/images/blogs/clean_code/documentation.jpg'
 tags: [python, logging, testing]

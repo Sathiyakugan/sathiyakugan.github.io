@@ -2,6 +2,7 @@
 title: "Understanding the Basics of Language Modeling and its evolution towards Transofrmers"
 layout: post
 description: "Language modeling, a fundamental task in natural language processing, has witnessed remarkable progress in recent years. This fascinating field has given rise to groundbreaking techniques that enable machines to understand and generate human-like language. In this blog, we embark on a journey through the evolution of language modeling, uncovering key milestones and advancements that have shaped its development."
+excerpt: "Language modeling, a fundamental task in natural language processing, has witnessed remarkable progress in recent years. This fascinating field has given rise to groundbreaking techniques that enable machines to understand and generate human-like language. In this blog, we embark on a journey through the evolution of language modeling, uncovering key milestones and advancements that have shaped its development."
 date: '2023-06-28 00:00:00'
 image: "/images/blogs/nlp/language_modeling.jpg"
 image_caption: 'Photo by <a href="https://unsplash.com/fr/@deepmind?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Google DeepMind</a> on <a href="https://unsplash.com/photos/X5CSjHTjlgw?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>'

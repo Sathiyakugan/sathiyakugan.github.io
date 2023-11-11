@@ -2,6 +2,7 @@
 layout: post
 title: "Become a Python Pro: Tips for Writing Reliable Code with Testing and Logging"
 description: Writing production-level Python code involves ensuring that the code is not only functional, but also efficient, maintainable, and easy to understand. To achieve these goals, it is important to follow best practices in Python development, such as using logging and testing to ensure the code is correct and easy to debug.
+excerpt: Writing production-level Python code involves ensuring that the code is not only functional, but also efficient, maintainable, and easy to understand. To achieve these goals, it is important to follow best practices in Python development, such as using logging and testing to ensure the code is correct and easy to debug.
 date: 2022-10-12 15:01:35 +0300
 image: '/images/blogs/clean_code/testing.jpg'
 tags: [python, logging, testing]

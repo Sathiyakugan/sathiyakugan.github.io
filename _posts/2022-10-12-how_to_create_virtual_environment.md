@@ -2,6 +2,7 @@
 layout: post
 title: "Isolate, Organize, and Deploy: The Benefits of Virtual Environments and Docker for Python"
 description: A virtual environment is a tool used to isolate specific Python environments on a single machine, allowing you to work on multiple projects with different libraries and dependencies. This is especially useful when working on projects that have conflicting requirements or when you want to test your code in different environments.
+excerpt: A virtual environment is a tool used to isolate specific Python environments on a single machine, allowing you to work on multiple projects with different libraries and dependencies. This is especially useful when working on projects that have conflicting requirements or when you want to test your code in different environments.
 date: 2022-10-12 15:01:35 +0300
 image: '/images/blogs/python_virtual_env/virtual_env.jpg'
 tags: [virtual_environments, docker, python]

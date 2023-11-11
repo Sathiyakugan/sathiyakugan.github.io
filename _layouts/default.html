@@ -9,6 +9,10 @@
     {% include google-analytics.html %}
   {% endif %}
 
+  {% if site.data.settings.advertisements %}
+    {% include advertisements.html %}
+  {% endif %}
+
   {% include header.html %}
 
   <!-- begin content -->

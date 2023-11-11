@@ -2,6 +2,7 @@
 title: "Understanding Neural Networks"
 layout: post
 description: "Neural networks are a powerful tool in the field of machine learning, enabling computers to learn and make predictions based on data. At the core of a neural network are individual units called neurons, which mimic the behavior of biological neurons in the human brain. In this article, we will explore the fundamentals of neural networks by examining a single neuron and its role in binary classification tasks. We will also delve into gradient descent, activation functions, and optimizers, essential concepts for training neural networks."
+excerpt: "Neural networks are a powerful tool in the field of machine learning, enabling computers to learn and make predictions based on data. At the core of a neural network are individual units called neurons, which mimic the behavior of biological neurons in the human brain. In this article, we will explore the fundamentals of neural networks by examining a single neuron and its role in binary classification tasks. We will also delve into gradient descent, activation functions, and optimizers, essential concepts for training neural networks."
 date: '2023-06-05 17:31:36'
 image: "/images/blogs/neural_networks/neural_networks.jpg"
 image_caption: 'Photo by <a href="https://unsplash.com/@jjying?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">JJ Ying</a> on <a href="https://unsplash.com/photos/8bghKxNU1j0?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>'

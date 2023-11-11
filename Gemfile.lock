@@ -36,6 +36,8 @@ GEM
       jekyll (>= 3.7, < 5.0)
       sinatra (>= 1.4)
       sinatra-contrib (>= 1.4)
+    jekyll-feed (0.17.0)
+      jekyll (>= 3.7, < 5.0)
     jekyll-paginate (1.1.0)
     jekyll-sass-converter (3.0.0)
       sass-embedded (~> 1.54)
@@ -99,6 +101,7 @@ DEPENDENCIES
   bundler
   jekyll
   jekyll-admin
+  jekyll-feed
   jekyll-paginate
   jekyll-seo-tag
   jekyll-sitemap

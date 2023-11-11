@@ -2,6 +2,7 @@
 title: 'SQL Query Optimization Tips for Data Engineers and Analysts'
 layout: post
 description: 'Learn how to optimize your SQL queries for faster data processing and analysis. From correlated queries to indexing and partitioning, we cover expert tips and techniques to help you improve the performance of your SQL queries.'
+excerpt: 'Learn how to optimize your SQL queries for faster data processing and analysis. From correlated queries to indexing and partitioning, we cover expert tips and techniques to help you improve the performance of your SQL queries.'
 date: '2023-01-01 17:31:36'
 image: "/images/blogs/sql/sql_performance_optimization.jpg"
 image_caption: 'Photo by <a href="https://unsplash.com/@ivvndiaz?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Ivan Diaz</a> on <a href="https://unsplash.com/photos/YOy-ek-aBR0?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>'

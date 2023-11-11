@@ -2,6 +2,7 @@
 layout: post
 title: "Elevate Your Python Skills: Techniques for Writing Production-Ready Code"
 description: I have extensive experience in Python, including developing an authentication SDK for WSO2 Identity Server and mentoring an anomaly detection project. In my work, I have implemented standards to ensure that our Python projects meet production-level. I am sharing my key learnings in this article to help other Python developers create stable, readable, and extendable code for production environments.
+excerpt: I have extensive experience in Python, including developing an authentication SDK for WSO2 Identity Server and mentoring an anomaly detection project. In my work, I have implemented standards to ensure that our Python projects meet production-level. I am sharing my key learnings in this article to help other Python developers create stable, readable, and extendable code for production environments.
 date: 2022-10-11 15:01:35 +0300
 image: '/images/blogs/clean_code/clean_code.jpg'
 tags: [python, clean_code, programming]

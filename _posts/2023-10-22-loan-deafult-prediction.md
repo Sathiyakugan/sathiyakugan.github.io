@@ -2,6 +2,7 @@
 title: "Predicting Loan Defaults: My Journey Through a Coursera Data Science Challenge"
 layout: post
 description: "This project, part of the Coursera Data Science Coding Challenge, aims to predict loan defaults based on various borrower-specific features. Understanding the patterns and correlations in the data allows lenders to better predict and mitigate potential loan defaults, ensuring a healthier portfolio and risk management."
+excerpt: "This project, part of the Coursera Data Science Coding Challenge, aims to predict loan defaults based on various borrower-specific features. Understanding the patterns and correlations in the data allows lenders to better predict and mitigate potential loan defaults, ensuring a healthier portfolio and risk management."
 date: '2023-06-28 00:00:00'
 image: "/images/works/loan_default_prediction/loand_deafult.jpg"
 image_caption: 'Photo by <a href="https://unsplash.com/@theyshane?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Shane</a> on <a href="https://unsplash.com/photos/man-in-black-framed-sunglasses-holding-fan-of-white-and-gray-striped-cards-U_ekGjoIm_E?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>'

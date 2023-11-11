@@ -132,3 +132,5 @@ disqus:
 #-------------------------------
 # Google Analytics
 google-analytics: UA-193975314-1 # Add your GA Tracking Id
+
+advertisements: true

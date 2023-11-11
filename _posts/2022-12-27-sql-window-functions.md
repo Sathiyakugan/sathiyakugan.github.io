@@ -2,6 +2,7 @@
 title: 'Mastering Data Analytics with Window Functions'
 layout: post
 description: 'This blog post discusses the importance and usefulness of window functions in data analytics, including their ability to perform complex calculations, aggregate data, rank data, compare data, and analyze data over a set of rows.'
+excerpt: 'This blog post discusses the importance and usefulness of window functions in data analytics, including their ability to perform complex calculations, aggregate data, rank data, compare data, and analyze data over a set of rows.'
 date: '2022-12-27 17:31:35'
 image: "/images/blogs/sql/window_functions.jpg"
 image_caption: 'Photo by <a href="https://unsplash.com/@rotekirsche20?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">rotekirsche20</a> on <a href="https://unsplash.com/wallpapers/desktop/windows?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>'

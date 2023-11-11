@@ -2,6 +2,7 @@
 layout: post
 title: "How Python Modules and Packages Help You Implement Design Patterns"
 description: This blog is discussing how to use python modules and packages to structure and optimize the efficiency of your Python projects. It covers the concept of how design patterns can be implemented in python, with a specific focus on the Singleton pattern which is a creational pattern that allows to ensure that only one instance of the class is created throughout the lifetime of the application.
+excerpt: This blog is discussing how to use python modules and packages to structure and optimize the efficiency of your Python projects. It covers the concept of how design patterns can be implemented in python, with a specific focus on the Singleton pattern which is a creational pattern that allows to ensure that only one instance of the class is created throughout the lifetime of the application.
 date: 2022-11-17 15:01:35 +0300
 image: '/images/blogs/python_packages/packages.jpg'
 tags: [python, design_pattern, singleton]

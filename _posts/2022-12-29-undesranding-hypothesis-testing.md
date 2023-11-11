@@ -2,6 +2,7 @@
 title: 'Understand hypothesis testing using a Business Problem'
 layout: post
 description: 'This article explains the hypothesis testing, using a business problem as an example to guide readers through the four steps of the process and introduce related concepts'
+excerpt: 'This article explains the hypothesis testing, using a business problem as an example to guide readers through the four steps of the process and introduce related concepts'
 date: '2022-12-27 17:31:35'
 image: "/images/blogs/hypothesis_testing/hypothesis_testing_intro.jpg"
 image_caption: 'Photo by <a href="https://unsplash.com/@kellysikkema?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Kelly Sikkema</a> on <a href="https://unsplash.com/photos/hjDib8hePtw?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>'

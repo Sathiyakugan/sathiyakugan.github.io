@@ -2,6 +2,7 @@
 title: "A Data Engineer's Guide to Slowly Changing Dimension"
 layout: post
 description: "In this blog, we'll take a deep dive into the concept of Slowly Changing Dimension (SCD) with real-world examples of each type and scenarios for implementation to help data professionals understand and implement the right type of SCD for their data warehouse."
+excerpt: "In this blog, we'll take a deep dive into the concept of Slowly Changing Dimension (SCD) with real-world examples of each type and scenarios for implementation to help data professionals understand and implement the right type of SCD for their data warehouse."
 date: '2023-01-15 17:31:36'
 image: "/images/blogs/scd/slowly_changing_dimension.png"
 image_caption: 'Photo by <a href="https://unsplash.com/de/@chrislawton?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Chris Lawton</a> on <a href="https://unsplash.com/photos/5IHz5WhosQE?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>slowly_'

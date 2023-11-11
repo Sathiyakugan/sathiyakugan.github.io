@@ -2,6 +2,7 @@
 title: "Unlocking the Potential of Docker for Data Science and Engineering"
 layout: post
 description: "This blog examines the use of Docker in data science and engineering, including benefits such as reproducible environments and dependency management. It provides examples and reference links for readers to understand and implement Docker in their workflows."
+excerpt: "This blog examines the use of Docker in data science and engineering, including benefits such as reproducible environments and dependency management. It provides examples and reference links for readers to understand and implement Docker in their workflows."
 date: '2023-01-24 17:31:36'
 image: "/images/blogs/docker/docker_data_engineer.jpg"
 image_caption: 'Photo by <a href="https://unsplash.com/@ventiviews?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Venti Views</a> on <a href="https://unsplash.com/photos/1cqIcrWFQBI?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>'

@@ -2,6 +2,7 @@
 layout: post
 title: Using Modules and Packages to Create Facade in Python
 description: Modules and packages in Python can be used to implement the Facade design pattern, which provides a simplified interface to a complex system. By creating a package or module that serves as a facade, you can expose a simplified interface to the rest of the system, allowing users to access and use the features of the system with ease. This can be useful in situations where you want to provide a simple, easy-to-use interface to a complex system.
+excerpt: Modules and packages in Python can be used to implement the Facade design pattern, which provides a simplified interface to a complex system. By creating a package or module that serves as a facade, you can expose a simplified interface to the rest of the system, allowing users to access and use the features of the system with ease. This can be useful in situations where you want to provide a simple, easy-to-use interface to a complex system.
 date: 2022-11-18 18:05:55 +0300
 image: '/images/blogs/python_packages/facade.jpg'
 tags: [python, design_pattern, facade]

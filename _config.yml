@@ -26,6 +26,7 @@ permalink: /:title
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
+  - jekyll-feed
 
 paginate: 5
 paginate_path: "/blog/page/:num"
@@ -69,3 +70,6 @@ defaults:
 sass:
   sass_dir: _sass
   style: compressed
+
+feed:
+  path: /blog/feed.atom

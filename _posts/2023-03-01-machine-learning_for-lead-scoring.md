@@ -2,6 +2,7 @@
 title: "Effective Lead Scoring with Machine Learning"
 layout: post
 description: "This blog explores lead scoring and its importance in identifying high-quality leads. It discusses features used for scoring, such as behaviors, demographics, and machine learning algorithms, to automate and prioritize leads for better sales performance."
+excerpt: "This blog explores lead scoring and its importance in identifying high-quality leads. It discusses features used for scoring, such as behaviors, demographics, and machine learning algorithms, to automate and prioritize leads for better sales performance."
 date: '2023-03-01 17:31:36'
 image: "/images/blogs/lead_scoring/lead_scoring.jpg"
 image_caption: 'Photo by <a href="https://unsplash.com/@enginakyurt?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">engin akyurt</a> on <a href="https://unsplash.com/photos/YxiW_hx3lyA?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>'

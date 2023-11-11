@@ -1,6 +1,7 @@
 ---
 title: 'Moving from Pandas to PySpark: An Easy Transition'
 layout: post
+excerpt: In this tutorial, I will show you how easy it is to transition from Pandas
 description: In this tutorial, I will show you how easy it is to transition from Pandas
   to PySpark by providing examples of common operations in both libraries. By following
   this tutorial, you will be able to quickly and easily migrate your data processing
