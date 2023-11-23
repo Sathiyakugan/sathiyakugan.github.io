@@ -1,5 +1,5 @@
 ---
-title: mlskeleton, the open-source python package
+title: Loan Defaults prediction
 description: "This project, part of the Coursera Data Science Coding Challenge, aims to predict loan defaults based on various borrower-specific features. Understanding the patterns and correlations in the data allows lenders to better predict and mitigate potential loan defaults, ensuring a healthier portfolio and risk management."
 category: Machine Learning
 date: 2023-10-26 08:01:35 +0300
