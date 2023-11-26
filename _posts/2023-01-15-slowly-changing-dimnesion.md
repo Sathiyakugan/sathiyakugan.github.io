@@ -24,274 +24,164 @@ For an example, The ecommerce store may have a customer dimension that contains 
 
 There are several types of SCD, each with its own advantages and disadvantages. Some common types include:
 
-## Type 0: 
-> No history is kept. The most recent data overwrites any previous data.
+### **What is a Slowly Changing Dimension (SCD)?**
 
-This means that whenever a change occurs in the source system table, the previous data in the dimension table is replaced with the new data, and the historical data is lost. This type of SCD is typically used when the dimension data is expected to never change, meaning that there is no need to track the history of the data.
+SCD is a technique used in data warehousing to manage changes in dimension data over time. Dimension data describes aspects of the business, like customers, products, or time. Tracking and managing these changes in a traditional relational database can be challenging. SCDs offer strategies to handle historical data in a way that reflects business operations over time.
 
-For example, let's say you have a dimension table for customers in your data warehouse and the source system table has customer information such as customer ID, name, address, and phone number.
+---
 
-Source System Table:
+## **Types of Slowly Changing Dimensions**
 
-| Customer ID | Name | Address       | Phone |
-| --- | --- |---------------| --- |
-| 1 | John | 123 Main St   | 555-555-5555 |
+### **Type 0: Static Dimension**
+
+- **What it is:** No history is kept. The most recent data overwrites any previous data.
+- **When to use it:** Use Type 0 when the dimension data is static and not expected to change.
+
+### Example
+
+**Source System Table:**
+
+| Customer ID | Name | Address | Phone |
+| --- | --- | --- | --- |
+| 1 | John | 123 Main St | 555-555-5555 |
 | 2 | Jane | 456 Queen Ave | 555-555-5556 |
 
-Data Warehouse Table:
+**Data Warehouse Table (Before Update):**
 
 | Customer ID | Name | Address | Phone |
 | --- | --- | --- | --- |
 | 1 | John | 123 Main St | 555-555-5555 |
 | 2 | Jane | 456 Queen Ave | 555-555-5556 |
 
-Let's say John updates his address to "456 Queen Ave" and his phone number to "555-555-5557". The Resulted tables will be,
-
-Source System Table:
+**Data Warehouse Table (After Update):**
 
 | Customer ID | Name | Address | Phone |
 | --- | --- | --- | --- |
 | 1 | John | 456 Park Ave | 555-555-5557 |
 | 2 | Jane | 456 Queen Ave | 555-555-5556 |
 
-Data Warehouse Table:
+*Note: John's updated address and phone number overwrite the previous data.*
 
-| Customer ID | Name | Address | Phone |
-| --- | --- | --- | --- |
-| 1 | John | 456 Park Ave | 555-555-5557 |
-| 2 | Jane | 456 Queen Ave | 555-555-5556 |
+---
 
-Notice that in the Data warehouse table, the address and phone number of John were updated without keeping the previous data.
+### **Type 1: Overwrite**
 
-Type 0 is the simplest and least complex of all the SCD types, it is useful in scenarios where the dimension data is expected to never change, or the historical data is not important. This type of SCD is not suitable for scenarios where the historical data is needed for analysis or reporting. However, it can be beneficial in situations where the storage space is limited and the dimension data is relatively static, as it will keep the dimension table small and simple.
+- **What it is:** When a change occurs, the existing record is updated (overwritten), leading to the loss of historical data.
+- **When to use it:** Use Type 1 when tracking historical changes is not important.
 
-<hr style="border-top: 1.5px solid #a39dee; width: 75%; margin: 2em auto; text-align:center">
+### Example
 
-## Type 1: 
->A new record is created each time a change occurs, and the previous record is kept in the dimension table.
-
-It is used in Data Warehousing when the dimension data is expected to change infrequently. In this type, when a new data arrives in source system table, a new record is created in dimension table with the updated data, and the previous record is kept in the dimension table without any flag indicating that it is no longer the current one.
-
-For example, let's say you have a dimension table for customers in your data warehouse and the source system table has customer information such as customer ID, name, address, and phone number.
-
-Source System Table:
+**Source System Table:**
 
 | Customer ID | Name | Address | Phone |
 | --- | --- | --- | --- |
 | 1 | John | 123 Main St | 555-555-5555 |
 | 2 | Jane | 456 Park Ave | 555-555-5556 |
 
-Data Warehouse Table:
-
-| Customer ID | Name | Address | Phone | Date |
-| --- | --- | --- | --- | --- |
-| 1 | John | 123 Main St | 555-555-5555 | 1/1/2022 |
-| 2 | Jane | 456 Park Ave | 555-555-5556 | 1/1/2022 |
-
-Let's say John updates his address to "456 Park Ave" and his phone number to "555-555-5557"
-
-Source System Table:
-
-| Customer ID | Name | Address | Phone |
-| --- | --- | --- | --- |
-| 1 | John | 456 Park Ave | 555-555-5557 |
-| 2 | Jane | 456 Park Ave | 555-555-5556 |
-
-Data Warehouse Table:
-
-| Customer ID | Name | Address | Phone | Date |
-| --- | --- | --- | --- | --- |
-| 1 | John | 123 Main St | 555-555-5555 | 1/1/2022 |
-| 1 | John | 456 Park Ave | 555-555-5557 | 1/2/2022 |
-| 2 | Jane | 456 Park Ave | 555-555-5556 | 1/1/2022 |
-
-Notice that in the Data warehouse table, a new record was created for John with the new address and phone number, while the previous record is kept with the original
-
-Type 1 is useful in scenarios where the dimension data is expected to change infrequently and the historical data is not important. This type of SCD allows for the preservation of historical data, but it can lead to an increase in the dimension table size and a more complex data warehouse. Additionally, it is important to keep track of which record is the current one, and which records are the previous ones. It is a simple solution that is easy to implement, but it does not provide the ability to track historical changes, which can be a significant limitation for some use cases.
-
-<hr style="border-top: 1.5px solid #a39dee; width: 75%; margin: 2em auto; text-align:center">
-
-## Type 2: 
->A new record is created each time a change occurs, and the previous record is kept in the dimension table, but a flag is added to indicate that the record is no longer the current one.
-
-This means that whenever a change occurs in the source system table, a new record is created in the dimension table with the new data, and the previous record is kept in the dimension table with a flag indicating that it is no longer the current one.
-
-For example,
-
-Source System Table:
+**Data Warehouse Table (Before Update):**
 
 | Customer ID | Name | Address | Phone |
 | --- | --- | --- | --- |
 | 1 | John | 123 Main St | 555-555-5555 |
 | 2 | Jane | 456 Park Ave | 555-555-5556 |
 
-Data Warehouse Table:
-
-| Customer ID | Name | Address | Phone | Date | Current |
-| --- | --- | --- | --- | --- | --- |
-| 1 | John | 123 Main St | 555-555-5555 | 1/1/2022 | 1 |
-| 2 | Jane | 456 Park Ave | 555-555-5556 | 1/1/2022 | 1 |
-
-Let's say John updates his address to "456 Park Ave" and his phone number to "555-555-5557"
-
-Source System Table:
+**Data Warehouse Table (After Update):**
 
 | Customer ID | Name | Address | Phone |
 | --- | --- | --- | --- |
 | 1 | John | 456 Park Ave | 555-555-5557 |
 | 2 | Jane | 456 Park Ave | 555-555-5556 |
 
-Data Warehouse Table:
+*Note: John's updated address and phone number replace the previous record.*
 
-| Customer ID | Name | Address | Phone | Date | Current |
-| --- | --- | --- | --- | --- | --- |
-| 1 | John | 123 Main St | 555-555-5555 | 1/1/2022 | 0 |
-| 1 | John | 456 Park Ave | 555-555-5557 | 1/2/2022 | 1 |
-| 2 | Jane | 456 Park Ave | 555-555-5556 | 1/1/2022 | 1 |
+---
 
-Notice that in the Data warehouse table, a new record was created for John with the new address and phone number, while the previous record is kept with the original data and a flag indicating that it is no longer the current one.
+### **Type 2: Versioning**
 
-Type 2 is useful in scenarios where the dimension data is expected to change frequently and the historical data is important. This type of SCD allows for the preservation of historical data and easy querying of current data. However, it can lead to an increase in the dimension table size and a more complex data warehouse. Additionally, it is important to keep track of which record is the current one, and which records are the previous ones. It is important to consider the specific requirements of your data warehouse and the level of change that is expected for the dimension data when deciding whether to use Type 2 SCD.
+- **What it is:** A new record is created for each change, preserving historical data. A flag indicates the current record.
+- **When to use it:** Use Type 2 when historical data and the ability to track changes over time are important.
 
-<hr style="border-top: 1.5px solid #a39dee; width: 75%; margin: 2em auto; text-align:center">
+### Example
 
-## Type 3:
-
-> Additional columns are added to the dimension table to store the previous data, and a flag is added to indicate that the record is no longer the current one.
-
-This means that whenever a change occurs in the source system table, a new version of the record is created in the dimension table with the new data, and the previous versions are kept in the dimension table with a flag indicating the current version.
-
-For example,
-
-Data Warehouse Table:
-
-| Customer ID | Name | Address | Phone | Current | Previous Address | Previous Phone |
-| --- | --- | --- | --- | --- | --- | --- |
-| 1 | John | 456 Park Ave | 555-555-5557 | 1 | 123 Main St | 555-555-5555 |
-| 2 | Jane | 456 Park Ave | 555-555-5556 | 1 | NULL | NULL |
-
-Notice that in the Data warehouse table, the current address and phone number of John were updated, but the previous address and phone number were also stored in the additional columns. A flag indicating that the current record is the updated one is added.
-
-Type 3 is useful in scenarios where the dimension data is expected to change frequently and you need to track the historical changes. This type of SCD allows for the preservation of historical data, easy querying of current data and historical data, and the ability to view the dimension data as of a certain point in time. However, it can lead to an increase in the dimension table size and a more complex data warehouse. Additionally, it is important to keep track of which version is the current one, and which versions are the previous ones. It is important to consider the specific requirements of your data warehouse and the level of change that is expected for the dimension data when deciding whether to use Type 3 SCD.
-
-<hr style="border-top: 1.5px solid #a39dee; width: 75%; margin: 2em auto; text-align:center">
-
-## Type 4: 
-It is a hybrid of Type 2 and Type 3, it is used when you need to track both historical data and the current state of the dimension data.
->A separate history table is created to store the previous data, and a flag is added to indicate that the record **is no longer the current one**.
-
-In this type, a new record is created each time a change occurs, and the previous record is kept in the dimension table, but a flag is added to indicate that the record is no longer the current one, and also a new version of the record is created with a flag indicating the current version.
-
-For example,
-
-Source System Table:
+**Source System Table:**
 
 | Customer ID | Name | Address | Phone |
 | --- | --- | --- | --- |
 | 1 | John | 123 Main St | 555-555-5555 |
 | 2 | Jane | 456 Park Ave | 555-555-5556 |
 
-Data Warehouse Table:
+**Data Warehouse Table (Before Update):**
 
 | Customer ID | Name | Address | Phone | Current |
 | --- | --- | --- | --- | --- |
-| 1 | John | 123 Main St | 555-555-5555 | 1 |
-| 2 | Jane | 456 Park Ave | 555-555-5556 | 1 |
+| 1 | John | 123 Main St | 555-555-5555 | Yes |
+| 2 | Jane | 456 Park Ave | 555-555-5556 | Yes |
 
-**History Table:**
+**Data Warehouse Table (After Update):**
 
-| Customer ID | Name | Address | Phone | Date |
-|------------| --- | --- | --- | --- |
-|            |  |   |  |  |
+| Customer ID | Name | Address | Phone | Current |
+| --- | --- | --- | --- | --- |
+| 1 | John | 123 Main St | 555-555-5555 | No |
+| 1 | John | 456 Park Ave | 555-555-5557 | Yes |
+| 2 | Jane | 456 Park Ave | 555-555-5556 | Yes |
 
-Let's say John updates his address to "456 Park Ave" and his phone number to "555-555-5557"
+*Note: A new record for John is created, preserving the old record as historical data.*
 
-Source System Table:
+---
+
+### **Type 3: Previous Value Columns**
+
+- **What it is:** Adds new columns to store previous values of changed attributes. Only the latest changes are tracked.
+- **When to use it:** Use Type 3 when you need to track a limited history or specific changes.
+
+### Example
+
+**Data Warehouse Table (Before Update):**
+
+| Customer ID | Name | Address | Phone | Prev Address | Prev Phone |
+| --- | --- | --- | --- | --- | --- |
+| 1 | John | 123 Main St | 555-555-5555 |  |  |
+| 2 | Jane | 456 Park Ave | 555-555-5556 |  |  |
+
+**Data Warehouse Table (After Update):**
+
+| Customer ID | Name | Address | Phone | Prev Address | Prev Phone |
+| --- | --- | --- | --- | --- | --- |
+| 1 | John | 456 Park Ave | 555-555-5557 | 123 Main St | 555-555-5555 |
+| 2 | Jane | 456 Park Ave | 555-555-5556 |  |  |
+
+*Note: John's current and previous addresses and phone numbers are all stored in the same record.*
+
+---
+
+### **Type 4: History Table**
+
+- **What it is:** Uses a separate history table to store changes, keeping the dimension table only with the current data.
+- **When to use it:** Use Type 4 when you need to isolate historical changes from current data for performance reasons.
+
+### Example
+
+**Source System Table:**
+
+| Customer ID | Name | Address | Phone |
+| --- | --- | --- | --- |
+| 1 | John | 123 Main St | 555-555-5555 |
+| 2 | Jane | 456 Park Ave | 555-555-5556 |
+
+**Data Warehouse Table (After Update):**
 
 | Customer ID | Name | Address | Phone |
 | --- | --- | --- | --- |
 | 1 | John | 456 Park Ave | 555-555-5557 |
 | 2 | Jane | 456 Park Ave | 555-555-5556 |
-
-Data Warehouse Table:
-
-| Customer ID | Name | Address | Phone | Current |
-| --- | --- | --- | --- | --- |
-| 1 | John | 456 Park Ave | 555-555-5557 | 1 |
-| 2 | Jane | 456 Park Ave | 555-555-5556 | 1 |
 
 **History Table:**
 
 | Customer ID | Name | Address | Phone | Date |
 | --- | --- | --- | --- | --- |
-| 1 | John | 123 Main St | 555-555-5555 | 1/2/2022 |
+| 1 | John | 123 Main St | 555-555-5555 | 1/1/2022 |
 
-Notice that in the Data warehouse table, the current address and phone number of John were updated, but the previous data is stored in a separate history table. A flag indicating that the current record is the updated one is added.
-
-Type 4 is useful in scenarios where the dimension data is expected to change frequently and you need to track both historical data and the current state of the dimension data. This type of SCD allows for the preservation of historical data, easy querying of current data and historical data, and the ability to view the dimension data as of a certain point in time. However, it can lead to an increase in the dimension table size and a more complex data warehouse.
-
-<hr style="border-top: 1.5px solid #a39dee; width: 75%; margin: 2em auto; text-align:center">
-
-## Type 6 (Type 1 + Type 2 + Type 3): 
-It is a method that combine the best of Type 1, Type 2 and  Type 3, where a new record is created each time a change occurs, and the previous record is kept in the dimension table. It also creates new version of the record with a flag indicating the current version, and also the new data is added to the previous record as additional columns.
-
-> A separate history table is created to store the previous data, and a flag is added to indicate that the record is no longer the current one.
-
-For example,
-
-Source System Table:
-
-| Customer ID | Name | Address | Phone |
-| --- | --- | --- | --- |
-| 1 | John | 123 Main St | 555-555-5555 |
-| 2 | Jane | 456 Park Ave | 555-555-5556 |
-
-Data Warehouse Table:
-
-| Customer ID | Name | Address | Phone | Current |
-| --- | --- | --- | --- | --- |
-| 1 | John | 123 Main St | 555-555-5555 | 1 |
-| 2 | Jane | 456 Park Ave | 555-555-5556 | 1 |
-
-History Table:
-
-| Customer ID | Name | Address | Phone | Date | Current |
-| --- | --- | --- | --- | --- | --- |
-|  |  |  |  |  |
-
-Let's say John updates his address to "456 Park Ave" and his phone number to "555-555-5557"
-
-Source System Table:
-
-| Customer ID | Name | Address | Phone |
-| --- | --- | --- | --- |
-| 1 | John | 456 Park Ave | 555-555-5557 |
-| 2 | Jane | 456 Park Ave | 555-555-5556 |
-
-Data Warehouse Table:
-
-| Customer ID | Name | Address | Phone | Current |
-| --- | --- | --- | --- | --- |
-| 1 | John | 456 Park Ave | 555-555-5557 | 1 |
-| 2 | Jane | 456 Park Ave | 555-555-5556 | 1 |
-
-History Table:
-
-| Customer ID | Name | Address | Phone | Date | Current |
-| --- | --- | --- | --- | --- | --- |
-| 1 | John | 123 Main St | 555-555 |  |  |
-
-Type 6 is useful in scenarios where the dimension data is expected to change frequently and you need to track both historical data and the current state of the dimension data, and also you want to maintain the original record. This type of SCD allows for the preservation of historical data, easy querying of current data and historical data, and the ability to view the dimension data as of a certain point in time. However, it can lead to an increase in the dimension table size and a more complex data warehouse. Additionally, it is important to keep track of which record is the current one, which records are the previous ones and which version is the current one. It is important to consider the specific requirements of your data warehouse and the level of change that is expected for the dimension data when deciding whether to use Type 6 SCD.
-
-<hr style="border-top: 1.5px solid #a39dee; width: 75%; margin: 2em auto; text-align:center">
-
-Type 5 and Type 7 Slowly Changing Dimension (SCD) are not commonly used in data warehousing and may not be supported by all ETL tools. Type 5 is a variation of Type 2, it creates a new record with the new data and adds a flag to indicate that the record is no longer the current one. Additionally, it adds the new data to the previous record as additional columns. Type 7 is similar to Type 6, it creates a new record with the new data and adds a flag to indicate that the record is no longer the current one. Additionally, it creates new version of the record with a flag indicating the current version and also the new data is added to the previous record as additional columns.
-
-These types of SCD can be useful in certain scenarios where you need to track both historical data and the current state of the dimension data, and also you want to maintain the original record and also the new data in the same record. However, they can lead to an increase in the dimension table size and a more complex data warehouse. Additionally, it is important to keep track of which record is the current one, which records are the previous ones and which version is the current one. It is important to consider the specific requirements of your data warehouse and the level of change that is expected for the dimension data when deciding whether to use these types of SCD.
-
-<hr style="border-top: 1.5px solid #a39dee; width: 100%; margin: 2em auto; text-align:center">
-
-To implement SCD, data engineers should first evaluate the specific requirements of their data warehouse and the level of change that is expected for the dimension data. Based on this, they should choose the appropriate type of SCD and plan the database design and ETL process accordingly.
+*Note: The history table stores John's previous address and phone number*
 
 In summary, SCD is a crucial technique in data warehousing that allows for the tracking of changes in dimension data over time. As a data engineer, having a good understanding of the different types of SCD and how to implement them is essential in ensuring the consistency, accuracy, and completeness of the data in the data warehouse. It is important to evaluate the specific requirements of the data warehouse and choose the appropriate type of SCD to ensure the best performance and results.
 
