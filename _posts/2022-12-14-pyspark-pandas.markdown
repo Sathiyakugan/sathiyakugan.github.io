@@ -10,7 +10,7 @@ date: '2022-12-14 17:31:35'
 image: "/images/blogs/pandas_to_pyspark/main.png"
 tags:
 - pyspark
-- data
+- spark
 - data_engineering
 ---
 

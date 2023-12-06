@@ -163,7 +163,7 @@ Mastering Apache Spark involves more than just understanding its API; it's about
 ## Reference
 
 1. **Apache Spark Documentation** - "Best Practices — PySpark 3.5.0 documentation." Apache Spark. [Apache Spark Documentation](https://spark.apache.org/docs/latest/api/python/getting_started/index.html).
-2. **Datanami** - "Apache Spark: 3 Real-World Use Cases." Datanami. [Datanami - Real-World Spark Use Cases](https://www.datanami.com/this-just-in/apache-spark-3-real-world-use-cases/).
-3. **ScienceSoft** - "Spark Solutions - Case Studies." ScienceSoft. [ScienceSoft - Spark Case Studies](https://www.scnsoft.com/big-data/spark).
-4. **Zaharia, M.** - Insights on Spark’s adoption and best practices in companies like Yahoo and Conviva. Strata Conference.
-5. **Nivargi, V.** - Interview on Spark’s application in ClearStory's data analytics. Databricks Co-founder Reynold Xin's Interview Series.
+2. **Datanami** - "Apache Spark: 3 Real-World Use Cases." Datanami. [Datanami - Real-World Spark Use Cases](https://www.datanami.com/2014/03/06/apache_spark_3_real-world_use_cases/).
+3. **ScienceSoft** - "Spark Solutions - Case Studies." ScienceSoft. [ScienceSoft - Spark Case Studies](https://www.scnsoft.com/case-studies/spark).
+4. **Zaharia, M.** - Insights on Spark’s adoption and best practices in companies like Yahoo and Conviva. [Strata Conference](https://www.youtube.com/watch?v=KspReT2JjeE&ab_channel=O%27Reilly).
+5. [Spark Performance Tuning & Best Practices](https://sparkbyexamples.com/spark/spark-performance-tuning/)
