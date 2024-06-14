@@ -1,5 +1,5 @@
 ---
-title: "Understanding the Basics of Language Modeling and its evolution towards Transofrmers"
+title: "Understanding the Basics of Language Modeling and its evolution towards Transformers"
 layout: post
 description: "Language modeling, a fundamental task in natural language processing, has witnessed remarkable progress in recent years. This fascinating field has given rise to groundbreaking techniques that enable machines to understand and generate human-like language. In this blog, we embark on a journey through the evolution of language modeling, uncovering key milestones and advancements that have shaped its development."
 excerpt: "Language modeling, a fundamental task in natural language processing, has witnessed remarkable progress in recent years. This fascinating field has given rise to groundbreaking techniques that enable machines to understand and generate human-like language. In this blog, we embark on a journey through the evolution of language modeling, uncovering key milestones and advancements that have shaped its development."
